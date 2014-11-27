@@ -63,25 +63,11 @@ printf2:
 	ret
 
 suma:
-	#push %edx
-	#mov $0, %eax
-	#mov $0, %edx
-
-	#Nuevo
 	mov $0, %edi
 	mov $0, %ebp
 	mov $0, %esi
 
 bucle:
-	#add (%ebx,%edx,4), %eax
-	#inc       %edx
-	#cmp  %edx,%ecx
-	#jne bucle
-
-	#pop %edx
-	#ret
-
-	#Nuevo
 	mov (%ebx,%esi,4), %eax
 	cltd 
 	add  %eax,%edi
