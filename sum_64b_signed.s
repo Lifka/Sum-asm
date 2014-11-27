@@ -85,15 +85,6 @@ suma:
 
 	mov $0, %esi # Para el índice, la iteración
 bucle:
-	#add (%ebx,%edx,4), %eax
-	#inc       %edx
-	#cmp  %edx,%ecx
-	#jne bucle
-
-	#pop %edx
-	#ret
-
-	#Nuevo
 	mov (%ebx,%esi,4), %eax
 	cltd # Convierte 32 bits en 64 bits, duplicando el signo
 
