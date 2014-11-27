@@ -1,3 +1,8 @@
+#	
+#	* Javier Izquierdo Vera
+#	* javierizquierdovera@gmail.com
+#	* UGR
+#
 .section .data
 
 # Para facilitarlo
@@ -10,12 +15,7 @@
 	#	.int 0x08000000,0x08000000,0x08000000,0x08000000
 	#	.int 0x10000000,0x20000000,0x40000000,0x80000000
 	.endm
-#	
-#	* Javier Izquierdo Vera
-#	* javierizquierdovera@gmail.com
-#	* UGR
-#
-
+	
  lista: .irpc i,12345678
 		linea 
 	.endr
