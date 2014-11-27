@@ -72,11 +72,6 @@ printf2:
 	ret
 
 suma:
-	#push %edx
-	#mov $0, %eax
-	#mov $0, %edx
-
-	#Nuevo
 	# Ponemos los registros que vamos a usar a 0
 	mov $0, %eax # Parte menos significativa de resultado
 	mov $0, %edx # Parte más significativa
