@@ -72,11 +72,6 @@ printf2:
 	ret
 
 suma:
-	#push %edx
-	#mov $0, %eax
-	#mov $0, %edx
-
-	#Nuevo
 	# Ponemos los registros que vamos a usar a 0
 	mov $0, %eax # Parte menos significativa de resultado
 	mov $0, %edx # Parte más significativa
@@ -85,14 +80,6 @@ suma:
 
 	mov $0, %esi # Para el índice, la iteración
 bucle:
-	#add (%ebx,%edx,4), %eax
-	#inc       %edx
-	#cmp  %edx,%ecx
-	#jne bucle
-
-	#pop %edx
-	#ret
-
 	adc (%ebx,%esi,4), %eax # "ebx + (esi * 4)" y lo movemos a eax, adc suma con acarreo, detecta cuando hay desbordamiento y suma el acarreo
  	inc %esi # Incrementa pos en 1
 	cmp  %esi,%ecx # Comparamos el índice con el tamaño del vector para saber si hemos llegado al final
